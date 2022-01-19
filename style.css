@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body{
+    background: rgb(76,46,92);
+    background: radial-gradient(circle, rgba(76,46,92,1) 0%, rgba(0,0,0,1) 100%);
+}
+.url-block{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.white-block{
+    width: 557px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px -1px white;
+}
+.url-btn{
+    width: 67px;
+    height: 49px;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    background: #4b2d5a;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    margin-left: 5px;
+    transition: all .5s;
+}
+.url-btn-block{
+    pointer-events: none;
+    opacity: 0.8;
+}
+.url-btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 1px black;
+}
+.generated-url{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10%);
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    font-size: 25px;
+}
+.url-input{
+    height: 47px;
+    width: 415px;
+    border-radius: 15px 0 0 15px;
+    border: none;
+    background: #4b2d5a;
+    color: white;
+    padding-left: 15px;
+    border:none;
+}
+.url-input:focus-visible{
+    outline: none;
+}
+.input-and-button{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(25px);
+}
+.copy-clip{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 171%);
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    color: white;
+    background-color: #4b2d5a;
+    overflow: hidden;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 26px;
+    /* transition: all .5s; */
+}
+.copy-clip-bloced{
+    opacity: 0.6 ;
+    pointer-events: none;
+}
+.active-btn-back-url{
+    transform: translate(-50%, -50%) !important;
+}
+.btn-back-url{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #24162c;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 86%);
+    transition: all .5s;
+}
+.copied{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    display: block;
+    margin-top: 13px;
+}
+.copy-clip:hover{
+    cursor: pointer;
+}
+.copy-btn-block{
+    pointer-events: none;
+    opacity: 0.8;
+}
